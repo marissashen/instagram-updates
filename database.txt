@@ -1,0 +1,59 @@
+#
+test1
+password1
+follower1, a, 1
+follower2, b, 1
+mutual1, c, 1
+follower3, d, 1
+follower4, e, 1
+mutual2, f, 1
+follower5, g, 1
+following1, h, -1
+following2, i, -1
+mutual1, c, -1
+following3, j, -1
+mutual2, f, -1
+following4, k, -1
+following5, l, -1
+#
+test2
+password2
+follower1, a, 1
+follower2, b, 1
+follower3, c, 1
+follower4, d, 1
+follower5, e, 1
+follower6, f, 1
+follower7, g, 1
+follower8, h, 1
+follower9, i, 1
+follower10, j, 1
+#
+test3
+password3
+following1, a, -1
+following2, b, -1
+following3, c, -1
+following4, d, -1
+following5, e, -1
+following6, f, -1
+following7, g, -1
+following8, h, -1
+following9, i, -1
+following10, j, -1
+#
+test4
+password4
+mutual1, a, 1
+mutual2, b, 1
+mutual3, c, -1
+mutual4, d, -1
+mutual5, e, 1
+mutual1, a, -1
+mutual2, b, -1
+mutual3, c, 1
+mutual4, d, 1
+mutual5, e, -1
+#
+test5
+password5

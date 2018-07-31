@@ -1,0 +1,126 @@
+********************
+Account: (test1, password1)
+Expected:
+Followers: [a: follower1, b: follower2, c: mutual1, d: follower3, e: follower4, f: mutual2, g: follower5]
+Following: [h: following1, i: following2, c: mutual1, j: following3, f: mutual2, k: following4, l: following5]
+Mutuals: [c: mutual1, f: mutual2]
+Hash: {follower1=0, follower2=1, mutual1=2, follower3=3, follower4=4, mutual2=5, follower5=6, following1=7, following2=8, following3=9, following4=10, following5=11}
+All: [a: follower1, b: follower2, c: mutual1, d: follower3, e: follower4, f: mutual2, g: follower5, h: following1, i: following2, j: following3, k: following4, l: following5]
+NFCB: [h: following1, i: following2, j: following3, k: following4, l: following5]
+CNFB: [a: follower1, b: follower2, d: follower3, e: follower4, g: follower5]
+
+Followers: [a: follower1, b: follower2, c: mutual1, d: follower3, e: follower4, f: mutual2, g: follower5]
+Following: [h: following1, i: following2, c: mutual1, j: following3, f: mutual2, k: following4, l: following5]
+Mutuals: [c: mutual1, f: mutual2]
+Hash: {follower2=1, mutual2=5, follower1=0, mutual1=2, following5=11, following4=10, following3=9, following2=8, following1=7, follower5=6, follower4=4, follower3=3}
+All: [a: follower1, b: follower2, c: mutual1, d: follower3, e: follower4, f: mutual2, g: follower5, h: following1, i: following2, j: following3, k: following4, l: following5]
+NFCB: [h: following1, i: following2, j: following3, k: following4, l: following5]
+CNFB: [a: follower1, b: follower2, d: follower3, e: follower4, g: follower5]
+NFCB Percent: 71
+CNFB Percent: 71
+********************
+
+********************
+Account: (test2, password2)
+Expected:
+Followers: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+Following: []
+Mutuals: []
+Hash: {follower1=0, follower2=1, follower3=2, follower4=3, follower5=4, follower6=5, follower7=6, follower8=7, follower9=8, follower10=9}
+All: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+NFCB: []
+CNFB: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+
+Followers: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+Following: []
+Mutuals: []
+Hash: {follower9=8, follower8=7, follower7=6, follower10=9, follower6=5, follower5=4, follower4=3, follower3=2, follower2=1, follower1=0}
+All: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+NFCB: []
+CNFB: [a: follower1, b: follower2, c: follower3, d: follower4, e: follower5, f: follower6, g: follower7, h: follower8, i: follower9, j: follower10]
+NFCB Percent: 0
+CNFB Percent: 100
+********************
+
+********************
+Account: (test3, password3)
+Expected:
+Followers: []
+Following: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+Mutuals: []
+Hash: {following1=0, following2=1, following3=2, following4=3, following5=4, following6=5, following7=6, following8=7, following9=8, following10=9}
+All: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+NFCB: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+CNFB: []
+
+Followers: []
+Following: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+Mutuals: []
+Hash: {following10=9, following9=8, following8=7, following7=6, following6=5, following5=4, following4=3, following3=2, following2=1, following1=0}
+All: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+NFCB: [a: following1, b: following2, c: following3, d: following4, e: following5, f: following6, g: following7, h: following8, i: following9, j: following10]
+CNFB: []
+NFCB Percent: 100
+CNFB Percent: 0
+********************
+
+********************
+Account: (test4, password4)
+Expected:
+Followers: [a: mutual1, b: mutual2, e: mutual5, c: mutual3, d: mutual4]
+Following: [c: mutual3, d: mutual4, a: mutual1, b: mutual2, e: mutual5]
+Mutuals: [a: mutual1, b: mutual2, c: mutual3, d: mutual4, e: mutual5]
+Hash: {mutual1=0, mutual2=1, mutual3=2, mutual4=3, mutual5=4}
+All: [a: mutual1, b: mutual2, c: mutual3, d: mutual4, e: mutual5]
+NFCB: []
+CNFB: []
+
+Followers: [a: mutual1, b: mutual2, e: mutual5, c: mutual3, d: mutual4]
+Following: [c: mutual3, d: mutual4, a: mutual1, b: mutual2, e: mutual5]
+Mutuals: [a: mutual1, b: mutual2, c: mutual3, d: mutual4, e: mutual5]
+Hash: {mutual5=4, mutual4=3, mutual3=2, mutual2=1, mutual1=0}
+All: [a: mutual1, b: mutual2, c: mutual3, d: mutual4, e: mutual5]
+NFCB: []
+CNFB: []
+NFCB Percent: 0
+CNFB Percent: 0
+********************
+
+********************
+Account: (test5, password5)
+Expected:
+Followers: []
+Following: []
+Mutuals: []
+Hash: {}
+All: []
+NFCB: []
+CNFB: []
+
+Followers: []
+Following: []
+Mutuals: []
+Hash: {}
+All: []
+NFCB: []
+CNFB: []
+NFCB Percent: 0
+CNFB Percent: 0
+********************
+
+********************
+Account: (lol, notToday)
+Expected:
+Wrong user info exception.
+
+Followers: []
+Following: []
+Mutuals: []
+Hash: {}
+All: []
+NFCB: []
+CNFB: []
+NFCB Percent: 0
+CNFB Percent: 0
+Account info does not exist in our database.
+********************
